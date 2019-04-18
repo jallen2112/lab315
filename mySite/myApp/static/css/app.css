@@ -1,0 +1,124 @@
+
+body {
+  font-family: 'Poppins', sans-serif;
+}
+p {
+  font-family: 'Poppins', sans-serif;
+}
+
+h1 {
+  color: #000000;
+  font-weight: bold;
+}
+
+h2, h3, h4 {
+  color: #FFFFFF;
+  font-family: 'Poppins', sans-serif;
+}
+
+a {
+  color: #FFFFFF;
+  background-color: #0000ff;
+}
+
+.top-bar a:hover {
+  font-weight: bold;
+  color: #FFFFFF;
+}
+
+.button {
+  color: #FFFFFF;
+  background-color: #1daf06;
+  border-radius: 20em;
+}
+
+.button:hover {
+  background-color: #1daf06;
+  opacity: 0.8;
+}
+
+.button:focus {
+  color: #FFFFFF;
+  background-color: #1daf06;
+  border-radius: 20em;
+}
+
+.button.expanded {
+  color: #FFFFFF;
+  background-color: #1daf06;
+  border-radius: 20em;
+}
+
+.top-bar {
+  background-color:#000000;
+  color:#FFFFFF;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+}
+
+.dropdown.menu {
+  background-color:#0000ff;
+  color:#FFFFFF;
+}
+
+.card {
+  border-color: #262626;
+  border-radius: 1em;
+  border: 0px;
+  -webkit-box-shadow: 0 0 40px #cacaca;
+          box-shadow: 0 0 40px #cacaca;
+}
+
+.card-divider {
+  background-color: #0000ff;
+  color: #1daf06;
+}
+
+.dropbtn {
+  background-color: #000000;
+  color: white;
+  padding: 16px;
+  font-size: 16px;
+  text-align: center;
+  border: none;
+}
+
+.dropdownd {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+  left: 0;
+}
+
+.dropdown-content a {
+  color: #000000;
+  background-color: #FFFFFF;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown-content a:hover {
+  color: #FFFFFF;
+  background-color: #0000ff;
+  font-weight: bold;
+}
+
+.dropdownd:hover .dropdown-content {display: block;}
+
+.dropdownd:hover .dropbtn {
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+}
+
+.menu {
+  background-color: #0000ff;
+}
+
+li {
+  background-color: #0000ff;
+}

@@ -1,0 +1,13 @@
+version: '3'
+services:
+  web315:
+    container_name: lab315 
+    build: .
+    volumes:
+      - .:/code
+    expose:
+      - "8000"
+    ports:
+      - "8000:8000"
+
+    command: python /code/mySite/manage.py runserver 0.0.0.0:8000

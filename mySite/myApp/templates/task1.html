@@ -1,0 +1,46 @@
+
+{% extends "base.html" %}
+{% load static %}
+{% block body %}
+<body>
+  <div style="text-align:center;" align="center" class="grid-container">
+
+    <div class="grid-y grid-padding-y">
+      <div class="cell small-12 medium-12 large-12 offset-2">
+        <h1>Task 1</h1>
+      </div>
+    </div>
+
+    <div style="text-align:center;" align="center" class="grid-x grid-padding-x">
+    </div>
+
+
+
+      <div style="text-align:center;" align="center" class="cell large-4 small-12">
+        <div style="text-align:center;" align="center" class="card">
+          <div style="text-align:center;" align="center" class="card-divider">
+             <div style="text-align:center;" align="center" class="dropdownd">
+               <button class="dropbtn"> National League West </button>
+               <div class="dropdown-content" id="content2">
+               </div>
+             </div>
+          </div>
+          <div class="card-section">
+            <p id="content" style="white-space: pre-wrap;"></p>
+          </div>
+        </div>
+      </div>
+  </div>
+
+
+</body>
+{% endblock %}
+{% block scripts %}
+<script src="{% static "js/vendor/canvasjs.min.js" %}"></script>
+<script src="{% static "js/vendor/payPeriodGraph.js" %}"></script>
+<script src="{% static "js/vendor/task1solution.js" %}"></script>
+<script async defer src="https://apis.google.com/js/api.js"
+  onload="this.onload=function(){};handleClientLoad()"
+  onreadystatechange="if (this.readyState === 'complete') this.onload()">
+</script>
+{% endblock %}
