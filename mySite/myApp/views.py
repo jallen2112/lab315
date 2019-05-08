@@ -136,11 +136,6 @@ def last5games(request):
         arigames.append(ari)
 
         allgames.append(arigames)
-#games[0] = ['hello', 'darkness']
-#        games[1] = ['my, old']
-#        games[2] = ['bye, old']
-#        games[3] = ['try, old']
-#        games[4] = ['lie, old']
         for i in range(len(teams)):
           json['baseball'].append({
               'event' : myEvents[i],
@@ -152,31 +147,6 @@ def last5games(request):
 		  })
           })
         return JsonResponse(json)
-        # pylint: disable=no-member
-        """cal_lists = service.calendarList().list().execute()
-        tz = pytz.timezone('America/Los_Angeles')
-        today = datetime.now(tz).date()
-        for entry in cal_lists['items']:
-            json['calendarLists'].append({
-                'name': entry['summary'].split('@')[0],
-                'primary': 'primary' in entry and entry['primary'],
-                # pylint: disable=no-member
-                'events': (
-                    service
-                    .events()
-                    .list(
-                        calendarId=entry['id'],
-                        timeMin=tz.localize(datetime.combine(today, time.min), is_dst=None).isoformat(),
-                        timeMax=tz.localize(datetime.combine(today, time.max), is_dst=None).isoformat(),
-                        showDeleted=False,
-                        singleEvents=True,
-                        orderBy='startTime',
-                        maxResults=10
-                    )   
-                    .execute()
-                )   
-            })  
-    """
     return HttpResponseBadRequest('Invalid Method')
 
 
@@ -191,7 +161,6 @@ def todaysgames(request):
 
         myEvents = ["myEvent0 1:00am", "myEvent1 10:30am", "myEvent2 12:00pm", "myEvent3 1:30pm", "myEvent4 5:00 pm"];
         divisions = ["NL East", "NL West", "NL Central", "AL East", "AL West"]
-#divisions = ["NL East", "NL West", "NL Central", "AL East", "AL West", "AL Central"];
 
         nlegames = []
         nlestart = []
@@ -383,4 +352,3 @@ def todaysgames(request):
 
 
 
-# Create your views here.
