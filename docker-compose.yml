@@ -10,4 +10,8 @@ services:
     ports:
       - "8000:8000"
 
-    command: python /code/mySite/manage.py runserver 0.0.0.0:8000
+#    command: python /code/mySite/manage.py runserver 0.0.0.0:8000
+#    command: python TimeTracker/TimeTracker/manage.py runserver 0.0.0.0:8000
+    command: >
+      sh -c "python TimeTracker/TimeTracker/manage.py migrate &&
+             python TimeTracker/TimeTracker/manage.py runserver 0.0.0.0:8000"
