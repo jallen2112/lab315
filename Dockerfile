@@ -4,3 +4,5 @@ RUN mkdir /code
 ADD . /code
 RUN pip install --upgrade pip
 RUN pip install -r /code/requirements.txt
+RUN git clone https://github.com/TreasonableShorebirds/TimeTracker.git
+
